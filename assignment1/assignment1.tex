@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+\usepackage[letter paper, portrait, margin=1in]{geometry}
+
+
+\begin{document}
+\begin{center}
+	\textbf{\Large{ASSIGNMENT 1}}
+\end{center}
+THE FTIC.csv file contains data for 9218 first-time college freshman.  The goal of this assignment is to explore the effect of increased admissions standards on enrollment and retention.
+\begin{enumerate}
+	\item Import the FTIC.csv file as a pandas data frame
+	\item Find the dimension of the data frame, and print the first few rows of the data frame to begin inspecting the data.
+	\item The column ``$2^{nd}$FALL'' shows whether each student was retained until their second fall semester.  Store that column of data in a vector called retention.  Check the length of retention, view the first few elements of the vector, and table the vector.
+	\item Store the PERCENTILE and SAT columns in vectors called rank and sat, create histograms, summaries, and find the mean of these vectors.
+	\item Replace the `Y`/`N` values of retention with 1's and 0's, and find the total number of students retained, and the retention rate.
+	\item Basic statistics:
+		\begin{enumerate}
+			\item Plot rank vs sat
+			\item Create a linear regression model for predicting sat using rank, and summarize that model
+			\item Plot retention vs rank
+		\end{enumerate}
+	\item Determining how to predict retention accurately will allow a school to admit students with the highest chance of being retained, and therefore increase retention rate.
+		\begin{enumerate}
+			\item Create a logistic regression model for predicting retention using rank.  
+			\item Find the $p$-value for rank in the model above.
+			\item Create a logistic regression model for predicting retention using sat.
+			\item Find the $p$-value for sat in the model above.
+			\item Create a logistic regression model for predicting retention using rank and sat.
+			\item Find the $p$-value for sat and rank in the model above.
+		\end{enumerate}
+	\item 
+\end{enumerate}
+
+\end{document}
